@@ -1,0 +1,535 @@
+/*=========== RESET ==========*/
+* {
+	margin: 0;
+	padding: 0; 
+	font-size: 100%; 
+	border: none; 
+	outline: none; 
+	font-weight: 300; 
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+body {
+	background-color: #f5f5f5;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+}
+/*alterado por mim dia 04 01 2017*/
+main{
+	min-height: 600px;
+	padding: 4%;
+}
+
+.circulo{
+	border-radius:50%;
+	border-style: solid;
+	border-color: #ffbb03;
+	background-color: #F6F9F9;
+	min-width: 180px;
+	min-height: 180px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;	
+}
+.todosCirculos{
+	width: 83%;
+	background-color: #4682b4;
+	border-radius: 10px;
+}
+			
+h5{
+	margin-top: 40px;
+	margin-bottom: 0px;
+	color: #ffbb03;
+	font-size: 15px;
+}
+p#sensor1,#sensor2,#sensor3,#sensor4,#sensor5{
+	font-size: 50px;
+	margin: 0px;
+	color: #ffbb03;
+}
+
+.graficos{
+	min-width: 300px;
+	min-height: 350px;
+	padding: 10px;
+	max-width: 40%;
+	width: 40%;
+	height: 40%;
+	border:1px solid #dddddd;
+	border-radius: 5%;
+	margin: 20px;
+	display: inline-block;
+	font-style: bold;
+	
+}
+.graficos h2{
+	display: inline-block;
+}
+.graficos h2#temperatura{
+	color: #ff6347;
+	background-color: #333333;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.graficos h2#umidade{
+	color: #00bfff;
+	background-color: #333333;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.graficos h2#luminosidade{
+	color: #ffa500;
+	background-color: #333333;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.graficos h2#amonia{
+	color: #da70d6;
+	background-color: #333333;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.graficos h2#carbono{
+	color: #00fa9a;
+	background-color: #333333;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.graficos h2#medida{
+	color: #fff;
+	background-color: #333;
+	padding: 3px;
+	margin: 5px;
+	border:1px solid #333;
+	border-radius: 3px;
+}
+
+/*==================================*/
+/*=========== CONTAINER ==========*/
+.container {
+	width: 100%;
+	float: left; 
+	padding: 3% 4%;
+	text-align: center;
+}
+/*=========== BG COLORS ==========*/
+.bg-gradient {
+	background-color: #da8000;
+}
+.bg-black {
+	background-color: #130400; 
+}
+.bg-white {
+	background-color: #fff;
+}
+/*=========== HELPERS ==========*/
+.radius {
+	border-radius: 7px;
+}
+/* CABEÇALHO */
+.cabecalho{
+	background-color:#333333;
+}
+.logo {
+	width: 56px;
+	height: 56px; 
+	float: left; 
+	background: url(../_img/logo-mobile.png) center center/56px no-repeat;
+	font-size: 0;
+}
+.btn-menu {
+	width: 56px; 
+	height: 56px; 
+	float: right; 
+	text-align: center; 
+	color: #fff; 
+	border-radius:56px;
+	cursor: pointer;
+}
+/* MENU */
+.menu {
+	display:none;
+	width: 100%; 
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0; left: 0;
+}
+/*ALTERADO POR MIM 04/01/2017*/
+.menu ul ul{
+	visibility: hidden;
+	position: static;;
+	float:none;
+	display:none;
+}
+.menu ul li:hover ul{
+	visibility: visible;
+	display:block;
+}
+.menu ul ul li{
+	float: none;
+	display: block;
+	background-color:#333333;
+}
+/*///////////////////*/
+.btn-close {
+	font-size: 1.5em;
+	color: #fff;
+	float: right; 
+	cursor: pointer; 
+	margin: 2% 3% 0 0;
+}
+.menu ul {
+	width: 100%; 
+	float: left; 
+	text-align: center;
+}
+.menu li {
+	padding: 1.5%;
+}
+.menu li a {
+	font-size: 1.5em; 
+	color: #fff; 
+	padding: 1.5% 2%;
+}
+.menu li a:hover {
+	border:1px solid #da8900;
+}
+.menu ul ul li a:hover {
+	border:none;
+}
+
+/* BANNER */
+.banner {
+	background: url(../img/bg.jpg) no-repeat fixed;
+}
+.title {
+	width: 100%;
+}
+.title h2 {
+	font-size: 2.5em;
+	color: #fff; 
+	font-weight: 700;
+}
+.title h3 {
+	font-size: 1.5em; 
+	color: #fff;
+}
+.buttons {
+	width: 100%; 
+	margin-top: 2%;
+}
+.buttons i {
+	float: right;
+}
+.btn {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer; 
+	padding: 5%;
+}
+.btn-cadastrar {
+	color: #130400;
+}
+.btn-sobre {
+	color:#fff ;
+	margin-top: 2%;
+}
+/* SERVIÇOS */
+.servico {
+	width: 100%; 
+	text-align: left;
+	margin-bottom: 3%;
+}
+.servico img {
+	border-radius: 7px 7px 0 0;
+}
+.inner {
+	padding: 7%;
+}
+.inner a {
+	font-size: 1.5em;
+	color: #130400; 
+	font-weight: 700;
+}
+.inner h4 {
+	font-size: 1.2em; 
+	color: #130400; 
+	margin-top: 2%; 
+}
+.inner p {
+	margin-top: 6%;
+	color: #130400;
+	line-height: 1.5em;
+}
+/* NEWSLETTER */
+.newsletter{
+	width:100%;
+	background-color: #fff;
+	border-radius: 7px 7px 0 0;
+	border: 1px solid #333;
+}
+.newsletter h2 {
+	font-size: 1em;
+	color: #333333; 
+	font-weight: 700;
+	
+}
+.newsletter h3 {
+	color: #fff;
+}
+.newsletter form {
+	margin-top: 2%;
+}
+.newsletter input {
+	width: 70%;  
+	color: #ddd; 
+	border: 1px solid rgba(255,255,255,0.3);
+	background-color: #333333;
+	padding: 5%;
+	display:block;
+	margin: 1%;
+}
+.newsletter button {
+	width: 70%; 
+	color:#130400;
+	padding: 5%;
+	cursor: pointer;
+	margin-top: 2%;
+	background-color:#CDC9C9;
+}
+.newsletter button:hover {
+	background-color:#ddd;
+}
+.botoesControle button{
+	width: 70%; 
+	color:#130400;
+	padding: 5%;
+	cursor: pointer;
+	margin-top: 2%;
+	background-color:#333;
+}
+
+#001,#002,#003,#004,#005{/*alterado dia 06*/
+	border-radius: 3px 0px 3px 0;
+	color: red;
+}
+/* RODAPÉ */
+.social-icons a {
+	font-size: 1.5em; 
+	color: rgba(255,255,255,0.7);
+	margin-right: 3%;
+}
+.social-icons a:last-child {
+	margin-right: 0;
+}
+.social-icons a:hover {
+	color: rgb(255,255,255);
+}
+.copyright {
+	color: rgba(255, 255, 255, 0.7);
+	margin-top:2%;
+}
+
+
+.form-erro{/*formatando o span que recebe as mensagens de erro dos formularios*/
+	/*float: right;*/
+	font-size: 15px;
+	/*color: #ff0052;*/
+}
+/*FORMATANDO TABELAS*/
+
+.btn-alter{
+	background-color: #00ff70;
+	padding: 5px;
+	color: #ffffff;
+	font-style: bold;
+	margin: 3px;
+	border-radius: 3px;
+}
+.btn-alter:hover {
+	background-color: #43cd80;
+	color: #ffffff;
+}
+.btn-delete{
+	background-color: #ff4040;
+	padding: 5px;
+	font-style: bold;
+	color: #ffffff;
+	margin: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn-delete:hover {
+	background-color: #cd3333;
+	color: #ffffff;
+}
+
+
+/*table{	
+	 width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table thead{
+	background-color: #333333;
+	color: #fff;
+}
+
+table tr{
+	margin:0px;
+	border: 1px solid #333333;
+}
+
+table tr td{
+	border: 1px solid #3333;
+	text-align:center;
+	vertical-align: middle;
+	max-width: 100%;
+}
+table td#linkAltera{
+	background: green;
+}*/
+
+
+/*table tbody tr:nth-child(2n+1){
+	background: #ddd;
+}*/
+
+
+/* ========== MOBILE FIRST ==========*/
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+	.logo {
+		width: 214px; 
+		background: url(../_img/logo.png) center center/214px no-repeat;
+	}
+	.btn {
+		font-size: 2em;
+	}
+}
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+	.servico {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+	.servico:nth-child(2){
+		margin-right: 0;
+	}
+	.newsletter h2 {
+		font-size: 2em;
+	}
+	.newsletter h3 {
+		font-size: 1.5em;
+	}
+	.newsletter input {
+		width: 70%;
+		padding: 2%;
+		float: none; 
+		margin-right: 1%;
+	}
+	.newsletter button {
+		width: 29%; 
+		padding: 2%; 
+		float: none;
+		margin-top: 0;
+	}
+}
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+	.title {
+		width: 70%; 
+		float: left;
+		text-align: left;
+	}
+	.title h2 {
+		font-size: 3em;
+	}
+	.title h3 {
+		font-size: 2em;
+	}
+	.buttons {
+		width: 30%; 
+		float: right;
+		margin-top: 0;
+	}
+	.servico {
+		width: 32%;
+	}
+	.servico:nth-child(2){
+		margin-right: 2%;
+	}
+	.servico:nth-child(3){
+		margin-right: 0;
+	}
+	.newsletter input {
+		width: 30%; 
+		float: none;
+	}
+	.newsletter button {
+		width: 20%; 
+		float: none;
+	}
+}
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1280px) {
+	.newsletter input {
+		width: 40%; float:
+	}
+	.btn-menu {
+		display: none;
+	}
+	.btn-close {
+		display: none;
+	}
+	.menu {
+		width: auto; 
+		height: 56px;
+		line-height: 56px;
+		float: right; 
+		background-color: #333333; 
+		display: block !important; 
+		position: static;
+	}
+	.menu li {
+		padding: 0; 
+		float: left;
+	}
+	.menu li a {
+		color:#339FD6;
+		font-size: 1em; 
+		padding: 15px;
+	}
+	.menu li a:hover {
+		border: none; 
+		color:#ffbb03;
+	}
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 250px;
+	}
+	.menu ul{
+		flex-direction: column;
+		position: relative;
+	}
+}
+
+
+

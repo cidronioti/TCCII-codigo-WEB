@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'fonteMenu'
+	src: url("../_fonte/Oxygen-Light.ttf");
+}
+@font-face{
+	font-family: 'fonteTitulos'
+	src: url("../_fonte/Roboto-BoldCondensed.ttf");
+}
+@font-face{
+	font-family: 'fonteTexto'
+	src: url("../_fonte/Oxygen-Regular.ttf");
+}
+form{
+	width: 500px;
+	max-width: 100%;
+	min-width: 200px;
+	margin: auto;
+}
+input, textarea{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	max-width: 100%;
+	min-width: 100px;
+}
+input:hover, textarea:hover{
+	background-color: #dddddd;
+}
+input#benviar{
+	margin: 0px auto 10px 20px;
+}
+input#benviar:hover{
+	background-color: #ffffff;
+	background: url('../_img/btnEnviarHover.png') no-repeat;
+}
+legend{
+	color: #888888;
+	font-weight: normal;
+	font-family: 'fonteTitulos', sans-serif;
+	font-size: 13px;
+}
+fieldset{
+	border-color: #cecece;
+	margin: 20px;
+}
+form p{
+	font-family: 'fonteTexto', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}

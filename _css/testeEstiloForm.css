@@ -1,0 +1,23 @@
+#fcontatos{
+	width: 80%;
+	max-width: 400px;
+	margin: auto;
+	background: white;
+
+}
+.campos{
+	padding: 10px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: 30px;	
+}
+.campos p input{ 
+	margin-bottom: 15px;
+	padding: 15px;
+	width: 100%;
+	min-width: 50px;
+	margin-right: 15px;
+	background-color: #eee;
+}
+

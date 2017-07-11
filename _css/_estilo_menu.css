@@ -1,0 +1,98 @@
+﻿@charset "UTF-8";
+
+#btnMenu{
+	display: none;
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+header label:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content:flex-end;/*alinha menu no lado direto da tela*/
+}
+li a{
+	display: block;
+	padding: 15px 20px;
+	color: #339FD6;
+	text-decoration: none;
+	text-align: center;/*posso tirar depois*/
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	transition: color 0.5s;
+}
+/*alterado dia 11 de dezembro na tentativa de incluir um sub menu*/
+.menu ul ul{
+	visibility: hidden;
+	position: absolute;
+	float:none;
+	display:block;
+}
+
+.menu ul li:hover ul{
+	visibility: visible;	
+}
+
+.menu ul ul li{
+	float: none;
+	display: block;
+}
+
+.menu ul ul li a{
+	background-color:#333333;
+}
+/*alteração feita até aqui dia 11 de dezembro*/
+li a:hover{
+	color: #dddddd;
+}
+@media(max-width: 800px){
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background: #333333;
+		width: 70%;
+		margin-left: -80%;
+		transition: all 0.5s;
+	}
+	
+	
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #dddddd;
+	}
+	#btnMenu:checked ~ .menu{
+		margin: 0;
+	}
+	.menu li:hover{
+		background-color: #069;
+	}
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height:0;
+		transition: all .4s;
+	}
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 250px;
+	}
+	.menu ul ul li a{
+		background-color:#069;
+	}
+}

@@ -1,0 +1,85 @@
+			form{
+				padding: 2.5em;
+				min-height:420px;<!--essa linha pode ser retirada se der problema-->
+				max-width:100%;
+			}
+			.group{
+				position: relative;
+				margin: 2.4em;
+			}
+			label{
+				color: #d2d2d2;
+				font-size:15px;
+				font-weight: normal;
+				font-family: sans-serif;
+				position:absolute;
+				pointer-events:none;
+				top: 10px;
+				transition:0.2s ease all;
+			}
+			input{
+				max-width: 100%;
+				color:#909090;
+				font-size: 15px;
+				padding: 10px 0px 10px 0px;
+				display: block;
+				outline:none;
+				border: none;
+				width:300px;
+				border-bottom: 1px solid #d2d2d2;
+			}
+			.bar{
+				max-width: 100%;
+				position: relative;
+				display:block;
+				width:300px;
+			}
+			.bar:before, .bar:after{
+				content: "";
+				height:2px;
+				width: 0;
+				bottom: -1px;
+				position:absolute;
+				background: #ffbb03;
+				transition:0.2s ease all;
+			}
+			.bar:before{left: 50%;}
+			.bar:after{right: 50%;}
+			
+			input:valid{border-bottom:1px solid #01bafe;}
+			input:valid~ .bar:before,
+			input:valid~ .bar:after{
+				background-color: #01bafe;
+			}
+			input:focus ~ label,
+			input.used ~ label{
+				top: -20px;
+				font-size: 13px;
+				color:#ffbb03;
+			}
+			input:valid ~ label,
+			input:valid.used ~ label{
+				color: #01bafe;
+			}
+			input:focus ~ .bar:before,
+			input:focus ~ .bar:after{
+				width: 50%;
+			}
+			.botao input[type=submit]{
+				max-width: 100%;
+				background-color: #ffbb03;
+				color: #000000;
+				border-bottom: 1px solid #d2d2d2;
+				margin: 2.4em;
+				position:relative;
+				cursor:pointer;
+				transition: all 0.3s esase-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-webkit-transition: all 0.3s ease-in-out;
+			}
+			
+			.botao input[type=submit]:hover{
+				background:#ffe403; 
+				border-color:#ffbb03;
+			}

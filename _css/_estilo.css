@@ -1,0 +1,235 @@
+﻿@charset "UTF-8";
+@font-face{
+	font-family: 'fonteMenu'
+	src: url("../_fonte/Oxygen-Light.ttf");
+}
+
+*{/*se der problema com as margens, remover.*/
+	margin: 0;
+}
+
+@font-face{
+	font-family: 'fonteTitulos'
+	src: url("../_fonte/Roboto-BoldCondensed.ttf");
+}
+@font-face{
+	font-family: 'fonteTexto'
+	src: url("../_fonte/Oxygen-Regular.ttf");
+}
+
+body{
+	/*background-color: #333333;*/
+}
+header{
+	margin-top: -10px;
+	margin-left: -10px;
+	min-height: 150px;
+	max-height: 100%;
+	width: 100%;
+	max-width: 100%;
+	background-color: #333333;
+	padding: 10px;
+	top-left: 10px;
+	border-bottom: 1px #339FD6 solid;
+	box-shadow: 0px 0px 10px rgba(0,0,0.5);
+	
+}
+img#logo{
+	max-width: 100%;
+	position: relative;
+}
+/*FORMATAÇÃO DA INTERFACE*/
+div#interface{
+	width: 80%;
+	background-color: #ffffff;
+	margin: 10px auto 0px auto; 
+	box-shadow: 0px 0px 10px rgba(0,0,0.5);
+	padding: 10px 10px 10px 10px; 
+	min-height: 600px;
+	/*min-height: 900px;apagar se der problema*/
+}
+div#interface h2{
+
+	font-family: 'fonteTitulos', sans-serif;
+}
+div#interface p{
+	font-family: 'fonteTexto', sans-serif;	
+}
+div#blocoAzul{
+	min-height: 150px;
+	max-width: 100%;
+	background-color: #339FD6;
+	display: inline-block;
+}
+div#blocoVerde{
+	min-height: 150px;
+	max-width: 100%;
+	background-color: #AABD60;
+}
+img#logoBlocoAzul{
+	max-width: 100%;
+	margin-top: 10px;
+}
+img#logoBloco{
+	max-width: 100%;
+	margin-top: 10px;
+	margin-left: 10px
+}
+
+div#interface h2{
+	color: #ffffff;
+}
+div#interface h2#tec{
+	color: #000000;
+}
+div#texto{
+	position: relative;
+	margin: 20px;/**/
+}
+
+p#textoBloco{
+	font-family: 'fonteTexto', sans-serif;
+	position: relative;
+	color: #ffffff;
+	margin: 20px;/**/
+}
+div#blocoSuporte{
+	border-bottom: 2px #339FD6 solid;
+	border-top: 2px #339FD6 solid;
+	min-height: 150px;
+	max-width: 100%;
+}
+div#blocos p{
+	color: #000000;
+}
+div#blocos h2{
+	color: #000000;
+}
+div#blocoBancoDados{
+	border-bottom: 2px #339FD6 solid;
+	min-height: 150px;
+	max-width: 100%;
+}
+div#blocoGestaoTi{
+	border-bottom: 2px #339FD6 solid;
+	min-height: 150px;
+	max-width: 100%;
+}
+div#blocoDesenSoft{
+	border-bottom: 2px #339FD6 solid;
+	min-height: 150px;
+	max-width: 100%;
+}
+img#banerServico{
+	max-width: 100%;
+	margin: 0;
+}
+
+
+/*FORMATAÇÃO DO MENU*/
+/*
+nav#menu ul{
+	list-style: none;
+	position: absolute;
+	top: 110px;
+	left: 500px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 20%;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	transition: background-color 1s;
+}
+nav#menu li:hover{
+	background-color: #339FD6;
+}
+nav#menu a{
+	color: #339FD6;
+	text-decoration: none;
+	font-family: 'fonteMenu', sans-serif;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	-o-transition: color 1s;
+	-ms-transition: color 1s;
+	transition: color 1s;
+}
+nav#menu a:hover{
+	color: #ffffff;
+}*/
+
+/*FORMATAÇÃO DA TAG INTERFACE*/
+			
+.circulo{
+	border-radius:50%;
+	border-style: solid;
+	border-color: #ffbb03;
+	background-color: #F6F9F9;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+			
+h5{
+	margin-top: 40px;
+	margin-bottom: 0px;
+	color: #ffbb03;
+	font-size: 15px;
+}
+p{
+	font-size: 50px;
+	margin: 0px;
+	color: #ffbb03;
+}
+			
+p#lb{
+	font-size: 15px;
+	color: #000000;
+}
+/*FORMATAÇÃO DA TABELA*/
+table{
+	width: 100%;
+}
+tr{
+	background-color:#ffffff;
+	font-size: 12px;
+	font-weight:bold;
+	max-width: 100%;
+}
+
+td{
+	color:#01bafe;
+	border: 1px solid #01bafe;
+	text-align:center;
+	vertical-align: middle;
+	max-width: 100%;
+}
+div#tTabela h2{
+	color: #333333;
+}
+
+.rodape{
+	position: relative;
+	bottom: o;
+	margin-top: -10px;
+	margin-left: -10px;
+	min-height: 150px;
+	width: 100%;
+	max-width: 100%;
+	background-color: #333333;
+	padding: 10px;
+	top-left: 10px;
+	border-top: 1px #339FD6 solid;
+}
+p#enrecoRodape{
+	color: #dddddd;
+	font-family: 'fonteTexto',sans-serif;
+	font-size: 15px
+}
